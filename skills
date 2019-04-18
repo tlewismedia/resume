@@ -1,0 +1,35 @@
+const languages = [
+['Javascript','80'],
+['Ruby','60'],
+['CSS','90'],
+['HTML','90'],
+['MySQL','40'],
+['Elm','20'],
+['Elixir','20']
+];
+
+
+const frameworks = [
+['React','60'],
+['Vue','40'],
+['Angular','60'],
+['Stimulus','50'],
+['Rails','50'],
+['Unity','20']
+];
+
+
+const concepts = [
+['GraphQL','20'],
+['REST','60'],
+['Functional Programming','50'],
+['Object Oriented Programming','60'],
+['Git','50'],
+['Testing','40'],
+['Project Management','80'],
+['UX','80'],
+['UI Design','80'],
+['Problem Decomposition','90'],
+['Communication','90'],
+['Team Leadership','80']
+];
