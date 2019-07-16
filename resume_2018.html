@@ -7,41 +7,51 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <!--  <header>
+<div class="print-wrap-one">
+  <header>
 
     <div class="container hdr__container">
-      <div class="identity">
-        <div class="profile">
-          <img src="https://via.placeholder.com/150" alt="">
-        </div>
+      <div class="hdr__profile_img"></div>
 
-        <h1>Thomas Lewis</h1>
+      <div class="hdr__copy">
+        <h1>Tom Lewis</h1>
 
-        <div>Developer</div>
+        <!-- <div class="hdr__tag">Solution Architect</div> -->
+
+        <div class="objective">Full Stack developer with Front End focus. Multi-disciplined in Engineering, Design, and User Experience. Diverse experience and love of learning have given me the ingenuity needed to tackle complex problems while being senstitive to the nuances of user interaction.</div>
       </div>
-
-      <div class="objective">I am passionate about engineering, design, and user experience. My diverse background and love of learning gives me the ingenuity needed to solve problems and enhance human experiences with technology.</div>
     </div>
 
-    <div class="hdr__curve"></div>
+    <!-- <div class="hdr__curve"></div> -->
   </header>
-
-
 
   <section class="experience">
     <div class="container">
       <h2>Experience</h2>
 
-      <div>
-        <h3>Ricochet Partners</h3>
+
+        <section>
+          <h3>Ricochet Partners</h3>
+
+
+          <div class="exp__title">Solution Architect</div>
+          <div class="exp__date">2019</div>
+
+          <ul class="exp__list">
+            <li>Responsible for leading development on web apps, web sites, and misc programming projects for a wide range of clients and industries. Involved in advising, implementation strategy, estimating, and execution of projects.</li>
+
+            <li>Built a 3D interactive web app for an electronics test chamber company. Technologies: Javascript, Webcomponents, Webpack,  and Sketchfab API.</li>
+
+            <li>Prototype development and UX advisory role for legal document mananagement application for a major chip fabricator.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Ricochet Partners</h3>
 
         <div class="exp__title">Senior Programmer</div>
-        <div class="exp__date">2015/2018</div>
+        <div class="exp__date">2015 - 2018</div>
 
         <ul class="exp__list">
-          <li>Responsible for leading development on web apps, web sites, and misc programming projects for a wide range of clients and industries. Involved in planning, estimating, and execution of projects.</li>
-
-           <li>Built a 3D interactive web app for an electronics test chamber company. Technologies: Javascript, Stimulus, Webpack,  and Sketchfab API.</li>
 
            <li>Developed a prototype for an Learning Management System comprised of a Ruby on Rails based API backend and Angular front end.</li>
 
@@ -57,18 +67,18 @@
 
            <li>Wrote javascript to solve ARIA accessibility requirements for training courses, produced with Adobe Captivate, for a major chip fabricator.</li>
 
-          <li> Ported Aggregate Industries Weather App, a web application, to iOS and Android, set up beta testing, and released on respective stores.</li>
+          <li>Ported Aggregate Industries Weather App, a web application, to iOS and Android, set up beta testing, and released on respective stores.</li>
 
            <li>Developing project management workflows, advising on project tool stacks and processes from project conception to billing.</li>
 
            <li>Other duties involved setting up eCommerce sites, extracting data with SQL queries, web scraping, building custom tools, streamlining development environments, server setup, and general troubleshooting. I occasionally surprise the team with delicious smoothies.</li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h3>Ricochet Partners</h3>
         <div class="exp__title">Junior Programmer</div>
-        <div class="exp__date">2014/2015</div>
+        <div class="exp__date">2014 - 2015</div>
 
         <ul>
           <li>Built custom CMS websites using Expression Engine</li>
@@ -79,21 +89,22 @@
 
           <li>Set up deployment processes</li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h3>Freelance Website Design and Development</h3>
         <div class="exp__date">2007 - 2014</div>
 
-        Designing and building CMS based websites with Wordpress, WooCommerce, and OpenCart.
+        <p>Designing and building CMS based websites with Wordpress, WooCommerce, and OpenCart.
 
-        During this time I applied my Art background and grew as a designer while honing my UI and UX sensibilities.
+          During this time I applied my Art background and grew as a designer while honing my UI and UX sensibilities.
 
-        I worked with a variety of teams from working solo to coordinating with multiple organizations. Pursued Computer Science degree at OSU while working.
+          I worked with a variety of teams from working solo to coordinating with multiple organizations. Pursued Computer Science degree at OSU while working.
 
-        Gained experience communicating with clients, making estimates, and understanding business needs.
-      </div>
+          Gained experience communicating with clients, making estimates, and understanding business needs.</p>
+      </section>
     </div>
+</div>
 
 </section>
 
@@ -114,18 +125,26 @@
       <div class="edu__status">Magna Cum Laude</div>
     </div>
   </div>
-</section> -->
+</section>
 
 <section class="skills">
   <div class="container">
 
     <h2>Skills</h2>
-    <h3>Languages</h3>
-    <ul id="languages"></ul>
-    <h3>Frameworks / Libraries</h3>
-    <ul id="frameworks"></ul>
-    <h3>Other Tech / Concepts</h3>
-    <ul id="concepts"></ul>
+    <div class="sk__sets">
+      <div class="sk__set">
+        <h3>Languages</h3>
+        <ul id="languages"></ul>
+      </div>
+         <div class="sk__set">
+        <h3>Frameworks / Libraries</h3>
+       <ul id="frameworks"></ul>
+         </div>
+      <div class="sk__set">
+        <h3>Other Tech / Concepts</h3>
+        <ul id="concepts"></ul>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -156,10 +175,10 @@
       {
         name : 'concepts',
         skills : [
-          ['GraphQL','20'],
-          ['REST','60'],
-          ['Functional Programming','50'],
-          ['Object Oriented Programming','60'],
+          // ['GraphQL','20'],
+          // ['REST','60'],
+          // ['Functional Programming','50'],
+          // ['Object Oriented Programming','60'],
           ['Git','50'],
           ['Testing','40'],
           ['Project Management','80'],
@@ -198,16 +217,27 @@
 <section class="about">
   <div class="container">
     <h2>About</h2>
+    Passionate about building high quality software
+    Lifelong pursuit developing my craft for code that is easy to read and maintain
+
+    I live in beautiful Portland OR and enjoy going camping on the coast or in the mountains on the weekends with my two boys.
+
+    Life long pursuit of baking the perfect pizza.
+
+    Love all kinds of skiing, cycling, hiking, mushroom picking
+
+    Enjoy mixing Award winning smoothies for my co-workers
+    <p></p>
   </div>
 </section>
 
 <footer>
-  <section class="container contact">
+  <div class="container contact">
 
      <div>4005 SE 49th Ave Portland, OR 97204</div>
      <div>(503) 475 - 2915</div>
      <div>tlewismedia@gmail.com</div>
-   </section>
+   </div>
 
 </footer>
 
