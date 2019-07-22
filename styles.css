@@ -16,6 +16,11 @@ body{
 
 }
 
+/*move*/
+body{
+  background: white;
+}
+
 h1, h2{
   font-style: bold;
   text-transform: uppercase;
@@ -87,13 +92,18 @@ header{
 
 }
 
+/*move*/
+header{
+  width: 200px;
+}
+
 .hdr__container{
   display: flex;
 
 
   /*move*/
   flex-direction: column;
-  width: 100px;
+  width: 100%;
 }
 
 .hdr__profile_img{
@@ -110,15 +120,10 @@ header{
 
 /*move*/
 .hdr__profile_img{
-  /*margin-right: 60px;*/
-  /*margin-bottom: 20px;*/
-  background: url('/profile.jpg');
-  background-size: cover;
-  height: 50px;
-  border-radius: 50px;
-  flex-basis: 50px;
+  flex-basis: 100px;
   flex-grow: 0;
   flex-shrink: 0;
+  width: 100px;
 }
 
 .hdr__copy{
@@ -156,7 +161,7 @@ h1 {
 
 /*move*/
 .objective {
-  width: 100px;
+  width: 100%;
 
 }
 
@@ -170,6 +175,8 @@ h1 {
 }
 
 
+
+
 /*move*/
 .experience{
   padding-top: 20px;
@@ -177,7 +184,7 @@ h1 {
   padding-right: 100px;
 }
 .experience section{
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 10px;
 }
 .experience li{
