@@ -5,6 +5,10 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /*end reset*/
 
+strong {
+  font-weight: bold;
+}
+
 div {
   box-sizing: border-box;
 
@@ -28,10 +32,7 @@ h2{
 }
 
 
-/*move*/
-h2{
-  margin-bottom: 0;
-}
+
 
 h3 {
   font-size: 25px;
@@ -42,10 +43,7 @@ section {
   padding: 40px 0;
 }
 
-/*move*/
-section {
-  padding: 0px 0;
-}
+
 
 ul{
   margin-left: 30px;
@@ -68,10 +66,7 @@ p {
   padding: 15px;
 }
 
-/*move*/
-.print-wrap-one{
-  display: flex;
-}
+
 
 header{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#032126+0,063a42+100 */
@@ -87,38 +82,25 @@ header{
 
 }
 
-.hdr__container{
+
+.hdr__container {
   display: flex;
-
-
-  /*move*/
-  flex-direction: column;
-  width: 100px;
 }
 
 .hdr__profile_img{
-  /*margin-right: 60px;*/
-  /*margin-bottom: 20px;*/
   background: url('/profile.jpg');
   background-size: cover;
   height: 200px;
+  width: 200px;
   border-radius: 100px;
-  flex-basis: 200px;
-  flex-grow: 0;
   flex-shrink: 0;
+
+
 }
 
-/*move*/
-.hdr__profile_img{
-  /*margin-right: 60px;*/
-  /*margin-bottom: 20px;*/
-  background: url('/profile.jpg');
-  background-size: cover;
-  height: 50px;
-  border-radius: 50px;
-  flex-basis: 50px;
-  flex-grow: 0;
-  flex-shrink: 0;
+.hdr__role{
+  font-style: italic;
+  margin-bottom: 4px;
 }
 
 .hdr__copy{
@@ -126,11 +108,7 @@ header{
   margin-right: 80px;
 }
 
-/*move*/
-.hdr__copy {
-  margin-left: 0px;
-  margin-right: 0px;
-}
+
 
 h1 {
   font-size: 45px;
@@ -142,11 +120,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-/*.hdr__curve{
-  height: 100px;
-  border: 1px solid black;
-  background: white;
-}*/
+
 
 .objective {
   line-height: 1.4em;
@@ -154,11 +128,7 @@ h1 {
 }
 
 
-/*move*/
-.objective {
-  width: 100px;
 
-}
 
 /***************************/
 .experience{
@@ -170,19 +140,7 @@ h1 {
 }
 
 
-/*move*/
-.experience{
-  padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 100px;
-}
-.experience section{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.experience li{
-  margin-left: 40px;
-}
+
 
 
 
@@ -206,6 +164,12 @@ h1 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d676b', endColorstr='#0d7a6b',GradientType=0 ); /* IE6-9 */
 
   color: white;
+}
+
+.edu__block_wrap{
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .edu__block{
@@ -303,24 +267,3 @@ footer{
   }
 }
 
-
-@media print {
- /* header{
-    background: red !important;
-  }*/
-  body{
-    font-size: .5em;
-  }
-
-  .print-wrap-one{
-    display: flex;
-  }
-
-  /*.hdr__profile_img{
-    height: 100px;
-    border-radius: 50px;
-    flex-basis: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }*/
-}
